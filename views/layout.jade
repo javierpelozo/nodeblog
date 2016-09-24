@@ -1,7 +1,21 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Blog in Node JS
+      link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .container
+      nav
+        ul
+          li
+            a(href='/') Inicio
+          li
+            a(href='/posts/agregar') Agregar Post
+          li
+            a(href='/categorias/agregar') Agregar Categoría
+      != messages()
+      block content
+      
+          
+          
+          
